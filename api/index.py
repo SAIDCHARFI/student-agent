@@ -6,7 +6,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_core.tools import tool
 
 # ---- Setup (reads key from environment, no getpass needed on a server) ----
-GROQ_API_KEY = os.environ["GROQ_API_KEY"]
+GROQ_API_KEY = os.environ["key"]
 
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
